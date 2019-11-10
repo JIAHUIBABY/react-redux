@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+html,body,#root,.App,.wrap{
+    width: 100%;
+    height: 100%;
+}
+%juzhong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    .con{
+        display: flex;
+        height: 120px;
+        border-bottom: 1px solid #eee;
+        .left{
+            flex: 3;
+            @extend %juzhong;
+            img{
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .mid{
+            flex: 4;
+            margin-top: 10%;
+        }
+        .right{
+            flex: 3;
+            display: flex;
+            @extend %juzhong;
+            button{
+                width: 40px;
+                height: 25px;
+            }
+        }
+    }
+}
+footer{
+    height: 50px;
+ border-top: 1px solid #eee;
+    display: flex;
+    span{
+        flex: 1;
+        @extend %juzhong;
+    }
+}
+.footer{
+    height: 50px;
+    background: red;
+    display: flex;
+    span{
+        flex: 1;
+        @extend %juzhong;
+    }
+}

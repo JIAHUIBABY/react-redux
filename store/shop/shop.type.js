@@ -1,0 +1,10 @@
+const SHOPDATA='SHOPDATA'
+const SUM_DATA='SUM_DATA'
+const CHECK='CHECK'
+const CHECKALL='CHECKALL'
+export {
+    SHOPDATA,
+    SUM_DATA,
+    CHECK,
+    CHECKALL
+}
